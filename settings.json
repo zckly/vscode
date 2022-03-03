@@ -1,0 +1,128 @@
+{
+  //VIM
+  "vim.hlsearch": true,
+  "vim.timeout": 250,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-f>": true,
+    "<C-a>": false
+  },
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  // vim mode viwy viwcmd+d p issue hack
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  // Use vim hjkl to navigate folders.
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
+  "workbench.sideBar.location": "right",
+  "zenMode.hideTabs": false,
+  "zenMode.hideLineNumbers": false,
+
+  // === COLOR THEME SETTINGS ===
+
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#cccccc",
+    "editorLineNumber.activeForeground": "#ffffff"
+  },
+
+  "breadcrumbs.enabled": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  "terminal.external.osxExec": "",
+  "python.languageServer": "Pylance",
+  "jupyter.askForKernelRestart": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "json.format.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "sourcery.token": "user_jAW712768nHwoFPTTvZFOacEHLYtjoUQEfP5krMkLfU900TS2gKC8kGE5Vs",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "editor.scrollBeyondLastLine": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.suggestSelection": "first",
+
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  // YouTube recordings.
+  "screencastMode.fontSize": 32,
+  "screencastMode.keyboardOverlayTimeout": 750,
+  "screencastMode.verticalOffset": 10
+}
